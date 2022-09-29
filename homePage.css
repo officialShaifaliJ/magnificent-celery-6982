@@ -246,7 +246,7 @@ font-weight: bold;
 #people{
     width:100%;
     margin-top: 100px;
-    border:1px solid black;
+    border:0px solid black;
     background-color:#4763fc;
     color: white;
 }
@@ -266,11 +266,45 @@ font-weight: bold;
 }
 #bottom{
     display: flex;
-    width:100%;
-    margin-top :50px;
+    width:98%;
+    border:0px solid black;
+    justify-content: space-around;
+    margin-top :120px;
 }
 .tools{
     width:10%;
-    border:1px solid black;
-    text-align: center;
+    border:0px solid black;
+    /* text-align: center; */
+    font-size: 17px;
+    padding: 10px;
+}
+.tools>h4{
+    font-weight: 1000;
+    border:0px solid black
+
+}
+.tools p{
+    font-weight: 500;
+    border:0px solid black
+
+}
+.tools p:hover{
+cursor:pointer;
+color:blue
+}
+#bufferImg{
+    width:45%;
+    border:0px solid black
+}
+.store{
+    border:1px solid blue;
+    background-color: white;
+    color: blue;
+    font-size: 10px;
+    margin-left :10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.store:hover{
+    background-color: rgb(217, 217, 243);
 }
