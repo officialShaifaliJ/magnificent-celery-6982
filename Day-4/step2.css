@@ -1,0 +1,393 @@
+/* Home Page Styling */
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* NavBar */
+#navBar{
+    position: sticky;
+    display:flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#navBar>img{
+    margin: 15px;
+}
+ul{
+    border: 0px solid black;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 15px;
+}
+.dropbtn,.navli{
+    font-size: 20px;
+}
+li a, .dropbtn , .navli{
+display: inline-block;
+color: black;
+padding: 14px 16px;
+    text-decoration: none;
+}
+.dropbtn:hover  {
+    color:blue ;
+}
+li.dropdown ,li.navli{
+display: inline-block;
+}
+.list a:hover{
+margin:8px;
+border-radius: 10px;
+}
+.list {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 250px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+font-size: 16px;
+}
+.list a {
+    color: black;
+display: block;
+text-align: left;
+margin:10px
+}
+.list a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .list {
+display: block;
+}
+#logo{
+width:10%;
+height: 10%;
+border:0px solid black;
+}
+button{
+padding-right:30px;
+padding-left: 30px;;
+background-color: #2c4bff;
+margin-top: 0px;
+border-radius: 10px;
+border: 0px solid black;
+color: white;
+font-size: 15px;
+font-weight: bold;
+margin-left: 0px;
+}
+
+/* video Div */
+#Div1{
+    border:0px solid black;
+    margin:auto;
+    width:96%;
+    display:flex;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+#ContentDiv{
+    padding: 35px;
+    border:0px solid black;
+    width:60%;
+    margin: auto;
+}
+#ContentDiv>p{
+    font-size: 12px;
+}
+.GetStarted{
+    height: 70px;
+    background-color: #2c4bff;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 0px solid black;
+    color: white;
+    /* padding: 30px; */
+    font-size: 19px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.GetStarted:hover{
+    background-color: rgb(0, 0, 206);
+}
+/* Brand */
+#brand{
+    width:60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    height:100px;
+    justify-content: space-evenly;
+}
+#brand>img{
+    width:12%;
+    height:40px;
+    color:grey;
+}
+
+/* Dashboard */
+.customers{
+    width:50%;
+    border:0px solid black;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.customers>h3{
+    color:#2c4bff;
+}
+/* tiktok   and  PLANNING*/
+
+.steps{
+    width:95%;
+    border:0px solid black;
+    margin-left:50px;
+    margin-top :60px;
+    padding:20px;
+    display:flex;
+}
+.StepsContent{
+    padding: 10px;
+    border:0px solid black;
+    width:50%;
+    padding: 5px;
+    margin-top:30px
+}
+.StepsContent>h2{
+    color:#2c4bff;
+}
+.StepsContent>p{
+    font-size: 16px;
+    line-height: 28px;
+}
+.steps .hand>img{
+    width:90%;
+    border:0px solid black;
+    margin:auto;
+    
+}
+
+/* 4Divs */
+
+#number{
+    display: flex;
+    justify-content:space-around;
+    padding: 50px;
+    gap: 10px;
+    margin-top: 70px;
+    border:0px solid black;
+    padding:40px
+}
+#number div{
+    border:0px solid black;
+
+}
+#number div>h4{
+    border:0px solid black;
+    font-weight:bold;
+    padding:10px;
+}
+#number img{
+    border:0px solid black;
+    width:25%;
+    height:30%;
+    padding:10px;
+
+}
+#number div>p{
+    margin:0%;
+    padding:7px;
+    font-weight: 500;
+    color:rgb(90, 86, 86);
+    border:0px solid black;
+}
+
+ /* 140,000  */
+
+#people{
+    width:100%;
+    margin-top: 100px;
+    border:0px solid black;
+    background-color:#2c4bff;
+    color: white;
+    background-image: url(https://buffer.com/static/background/triangle-green.svg), url(https://buffer.com/static/background/planet@2x.png), url(https://buffer.com/static/background/circle-pink.svg),url(https://buffer.com/static/background/circle-brush@2x.png), url(https://buffer.com/static/background/lines-orange.svg), url(https://buffer.com/static/background/triangle-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: 40px, 180px, 60px ,40px,180px, 26px;
+    background-position: 120px 75px, -55px 160px, 88px 105%,80% 30px, 105% 110px , 90% 246px;
+}
+#people div{
+    width: 44%;
+    margin: auto;
+    padding: 10px;
+    line-height: 55px;
+    text-align: center;
+    
+}
+#pay{
+    display: flex;
+    border: 0px solid;
+    margin-top:0px;
+    justify-content: space-evenly;
+}
+
+/* Collaboration */
+#start{
+    width:95%;
+    border:0px solid black;
+    margin: auto;
+    margin-top :60px;
+    padding:40px;
+   display:flex;
+   gap:20px;
+
+}
+#StartContent{
+    padding-right: 100px;
+    border:0px solid black;
+    margin-top:30px;
+}
+#StartContent>h1{
+    width:50%;
+    border:0px solid black;
+}
+#StartContent>p{
+    width:75%;
+    border:0px solid black;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+}
+#StartContent>h3{
+    color:#2c4bff
+}
+.subDiv{
+    width:90%;
+    display: flex;
+    border:0px solid black;
+    gap:20px;
+    padding-left: 20px;
+}
+
+.subDiv p{
+    padding:5px;
+    border:0px solid black;
+
+}
+.subDiv img{
+    width:20%;
+    height:30%
+}
+/* Quote */
+#quote{
+    margin-top:15px;
+   
+}
+#quote>div{
+    width:80%;
+    border:0px solid;
+    margin:auto ;
+    display:flex;
+}
+#quote>div>div{
+    width:100%;
+    margin-left:15px;
+    padding: 50px;
+}
+
+/* insta */
+#insta{
+    display: flex;
+    border:0px solid black;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-top:30px
+}
+#insta div{
+    width:21%;
+    border:0px solid firebrick;
+    padding-left: 5px;
+    line-height: 30px;
+}
+#insta div h3{
+    padding-left: 30px;
+}
+
+#insta div p{
+color:rgb(100, 96, 96);
+font-weight: 500;
+padding-left: 30px;
+}
+#insta div img{
+    width:100%;
+    margin:0px
+}
+
+
+#pink{
+    background-color: #e97284 ;
+    padding: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 70px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 0px solid black;
+    color: white;
+    /* padding: 30px; */
+    font-size: 19px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#pinks:hover{
+    background-color: #c24a5c;
+}
+ /* bottom */
+ #bottom{
+    display: flex;
+    width:98%;
+    border:0px solid black;
+    justify-content: space-around;
+    margin-top :120px;
+}
+.tools{
+    width:10%;
+    border:0px solid black;
+    /* text-align: center; */
+    font-size: 17px;
+    padding: 10px;
+}
+.tools>h4{
+    font-weight: 1000;
+    border:0px solid black
+
+}
+.tools p{
+    font-weight: 500;
+    border:0px solid black
+
+}
+.tools p:hover{
+cursor:pointer;
+color:blue
+}
+#bufferImg{
+    width:45%;
+    border:0px solid black
+}
+.store{
+    border:1px solid blue;
+    background-color: white;
+    color: blue;
+    font-size: 10px;
+    margin-left :10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.store:hover{
+    background-color: rgb(217, 217, 243);
+}
