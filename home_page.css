@@ -37,9 +37,7 @@ li.dropdown ,li.navli{
 display: inline-block;
 }
 .list a:hover{
-/* border:1px solid gold; */
-margin:7px;
-border-radius:5px
+border:1px solid
 }
 .list {
 display: none;
