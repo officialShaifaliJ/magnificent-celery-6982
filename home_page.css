@@ -125,7 +125,7 @@ font-weight: bold;
 #brand>img{
     width:10%;
     height:50px;
-    color:grey;
+  opacity: 0.7;
 }
 .customers{
     width:45%;

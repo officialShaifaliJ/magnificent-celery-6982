@@ -47,7 +47,7 @@
             <a herf="" class="navli">Customer</a>
 
             <a herf="login.html" class="navli">Login</a>
-            <button id="signup"><a herf="">Get started now</a></button>
+            <button id="signup">Get started now</button>
            </ul>
     </div>
 
@@ -355,4 +355,13 @@
 </body>
 </html>
 <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous">
+
+</script>
+
+<script>
+    document.querySelector("#signup").addEventListener("click",signupbtn);
+    function signupbtn(event){
+        console.log("hello");
+        window.location.href="siginUp.html"
+    }
 </script>
