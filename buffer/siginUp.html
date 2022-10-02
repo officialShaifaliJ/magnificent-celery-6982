@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div>
+        <img src="https://static.buffer.com/login/public/img/buffer-logo.svg" alt="" style="width : 8% ;margin: 2px;padding: 40px;border:0px solid firebrick">
+            <div id="form">
+                <form>
+                    <h2>
+                        Let's get your account set up
+                    </h2>
+                    <label>
+                        Email
+                    </label><br>
+                    <input type="email" id="mail" required><br>
+                    <label>
+                       Create a Password
+                    </label><br>
+                    <input type="password" id="password" required><br>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <div id="bottom">
+                    <p>
+                        I agree to <a href="">Buffer's Terms of Service</a>
+                    </p>
+                    <p>
+                        <a href="login.html">
+                            Already have an account?
+                        </a>
+                    </p>
+                </div>
+            </div>
+    </div>
+    
+        <div id="sideBackground">
+            <img src="https://static.buffer.com/login/public/img/signup-bkg-publish.png" alt="" style="width:99%;height:712px">
+            <div>
+                <h3>
+                    “With Buffer I can build social content out as far as I want into the future but also tailor campaigns if we see certain trends within the industry.”
+                </h3>
+                <img src="https://static.buffer.com/login/public/img/signup-avatar-publish.png" alt="">
+                <h5>
+                    Justin Ozanich
+                </h5>
+                <p>
+                    Marketing Manager
+                </p>
+                <p>
+                    Foster Coffee Company
+                </p>
+            </div>
+            
+        </div>
+    
+</body>
+</html>
+
+<script>
+    let form=document.querySelector("form");
+    form.addEventListener("submit",signUp);
+
+    function signUp(event){
+        event.preventDefault();
+        
+        let obj={
+            email:document.querySelector("#mail").value,
+            password:document.querySelector("#password").value,
+        }
+
+        localStorage.setItem("signupDetails",JSON.stringify(obj));
+        alert("Congratulation ")
+        window.location.href="login.html";
+    }
+</script>

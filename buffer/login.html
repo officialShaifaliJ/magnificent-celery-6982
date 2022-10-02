@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div>
+    <div>
+        <img src="https://static.buffer.com/login/public/img/buffer-logo.svg" alt="" id="logo">
+        <div id="form">
+           
+            <form>
+                <h1>
+                    Log in
+                </h1>
+                <label for="email">
+                    Email Address
+                </label></br>
+                <input type="email" id="mail" value="" required>
+                <br>
+                <label for="Password">
+                    Password
+                </label></br>
+                <input type="password" id="password"  value="" required>
+            </br>
+                <input type="submit" value="Log in">
+            </form>
+            <div id="bottom">
+                <p>
+                    <a href="siginUp.html">Create a Account</a>
+                </p>
+                <p>
+                    Forgot your Password?
+                </p>
+            </div>
+    </div>
+    <div id="image">
+        <div id="para">
+            <h2>
+                Introducing: A free micro-site by Buffer
+            </h2>
+            <p>
+                A Start Page is a beautiful, flexible, mobile-friendly landing page that you can build in minutes and update in seconds
+
+
+            </p>
+        </div>
+        <!-- margin-top:16.5%; -->
+        <img src="https://login.buffer.com/img/sp-login-image.png" alt="" style="width:82%;margin-top:-2px;margin-left:21%">
+    </div>
+   
+</div>
+</body>
+</html>
+<script>
+    let submit=document.querySelector("form");
+    submit.addEventListener("submit",logInFun);
+
+    function logInFun(event){
+
+        event.preventDefault();
+            let email=document.getElementById("mail").value;
+            let password=document.getElementById("password").value;
+
+            let data=JSON.parse(localStorage.getItem("signupDetails"))
+            // console.log(data)
+            if(email===data.email && password===data.password){
+                // window.location.href="";
+                console.log("Login Successful")
+                alert("Login Successful")
+            }else if(email!==data.email && password!==data.password){
+                alert("Incorrect Password and Email")
+            }else if(email!==data.email){
+                alert("Incorrect Email")
+            }else if(password!==data.password){
+                alert("Incorrect Password")
+            }
+
+    }
+</script>

@@ -1,0 +1,172 @@
+/* STYLING OF SIGN UP PAGE */
+body{
+    margin:0px;
+    padding:0px;
+    font-family:Rubik;
+}
+#form{
+    border:0px solid black;
+    width:65%;
+}
+h2{
+    color: #3d3d3d;
+    font-size: 30px;
+    font-weight: 0;
+}
+form{
+    border:0px solid firebrick;
+    width:60%;
+    margin: auto;
+    padding: 10px;
+    margin-top:45px;
+    margin-left: 200px;
+}
+input[type="email"],input[type="password"]{
+    width: 90%;
+    background-color: #FFFFFF;
+    height: 48px;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    border-radius: 4px;
+    margin:   8px 0px;
+    border: 1px solid #B8B8B8;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    width: 90%;
+    background-color: #d1cdcd;
+    height: 48px;
+    border-radius: 4px;
+    border:0px;
+    margin-top:20px;
+    color:#696363;
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: #e9e7e7;
+    color: #3d3d3d;
+}
+label{
+    font-size: 15px;
+    font-weight: 500;
+    color:#000000;
+}
+#bottom{
+    display:grid;
+    width:62%;
+    border:0px solid indianred;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    padding-right: 40px;
+    font-size: 13px;
+    margin-left: 208px;
+    font-weight:500;
+    color: #696363;
+}
+#sideBackground{
+    margin-left:65%;
+    margin-top: -600px;
+}
+#sideBackground>div{
+width:70%;
+border:0px solid black;
+font-size:15px;
+margin: auto;
+margin-top:-500px;
+text-align: center;
+color: white;
+
+}
+
+#sideBackground>div>h3{
+    font-size: 18px;
+}
+#sideBackground>div>img{
+    width:25%
+}
+@media all and (min-width: 451px) and (max-width: 750px){
+    body{
+        margin:0px;
+        padding:0px;
+        font-family:Rubik;
+    }
+    #form{
+        border:0px solid black;
+        width:85%;
+        margin: auto;
+    }
+    h2{
+        color: #3d3d3d;
+        font-size: 30px;
+        font-weight: 0;
+    }
+    form{
+        border:0px solid firebrick;
+        width:100%;
+        margin: auto;
+        padding: 10px;
+        margin-top:0px;
+        margin-left:0px;
+    }
+    input[type="email"],input[type="password"]{
+        width: 90%;
+        background-color: #FFFFFF;
+        height: 48px;
+        /* padding-left: 16px; */
+        /* padding-right: 16px; */
+        border-radius: 4px;
+        margin:   8px 0px;
+        border: 1px solid #B8B8B8;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    input[type="submit"]{
+        width: 90%;
+        background-color: #d1cdcd;
+        height: 48px;
+        border-radius: 4px;
+        border:0px;
+        margin-top:20px;
+        color:#696363;
+        font-weight: bold;
+    }
+    
+    label{
+        font-size: 15px;
+        font-weight: 500;
+        color:#000000;
+    }
+    #bottom{
+        display:grid;
+        width:100%;
+        border:0px solid indianred;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        padding-right: 40px;
+        font-size: 15px;
+        margin-left: 5px;
+        font-weight:500;
+        color: #696363;
+    }
+    #sideBackground{
+        margin-left:0%;
+        margin-top: 0px;
+    }
+    #sideBackground>div{
+    width:70%;
+    border:0px solid black;
+    font-size:15px;
+    margin: auto;
+    margin-top:-500px;
+    text-align: center;
+    color: white;
+    
+    }
+    #sideBackground>div>h3{
+        font-size: 23px;
+    }
+    #sideBackground>div>img{
+        width:32%
+    }
+}
